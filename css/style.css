@@ -1,13 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box0;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
-  background: rgb(2,0,36);
-  background: linear-gradient(177deg, rgba(2,0,36,1) 24%, rgba(19,33,110,1) 35%, rgba(19,110,68,1) 78%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    177deg,
+    rgba(2, 0, 36, 1) 24%,
+    rgba(19, 33, 110, 1) 35%,
+    rgba(19, 110, 68, 1) 78%
+  );
 }
 
 h1 {
@@ -20,13 +25,12 @@ h1 {
 }
 
 .wrapper {
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin-top: 60px;
-
 }
 
-.container {
+.card {
   width: 140px;
   height: 140px;
   background: #ffff;
@@ -39,13 +43,13 @@ h1 {
   border-radius: 30%;
 }
 
-.container div {
+.card div {
   font-weight: 900;
   font-size: 4rem;
-  color:black ;
+  color: black;
 }
 
-.container span {
+.card span {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -54,26 +58,25 @@ h1 {
   background: rgb(200, 186, 186);
 }
 
-
 /** rede-social **/
-
-div ul {
+ul.social-media {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 100px;
   margin-top: 25px;
+  padding: 0;
 }
 
-div ul li {
-  transition: trasform .3s;
+li {
+  transition: transform 0.3s;
   list-style: none;
 }
 
-
-div ul li:hover {
+li:hover {
   transform: scale(1.4);
 }
-.rede-social img {
-  width: 70px;
+
+.social-media img {
+  width: 50px;
 }
